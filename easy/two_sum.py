@@ -20,13 +20,30 @@ class Solution:
     É possível fazer este problema de duas formas, a forma bruta com a complexidade O(n^2)
     ou fazer da forma mais inteligente com a complexidade O(n)
 
-        - Forma bruta: Criar dois laços aninhados onde percorrerá valor a valor e ir comparando
-        se a soma deles é igual ao alvo
+        - Forma bruta: 
+            Consiste em utilizar dois laços aninhados para percorrer todos os pares possíveis de números na lista.
 
-        - Forma inteligente: Usar o conceito de hash map para criar um histórico dos valores 
-        já acessados e seus indexes, para isso calcula-se um complemento para cada valor
-        na lista e verifica se existe no dicionário, caso sim os valores dos indexes são o index
-        do valor do complemento no dicionário e o index do valor atual.
+            Para cada elemento, comparamos sua soma com todos os outros elementos seguintes.
+            Se a soma for igual ao valor alvo, retornamos os índices correspondentes.
+
+            Essa abordagem é direta e fácil de entender, mas pouco eficiente para listas grandes, pois tem complexidade 
+            de tempo O(n^2) — ou seja, o tempo de execução cresce rapidamente conforme o tamanho da lista aumenta.
+
+        - Forma inteligente: 
+            Utiliza um hash map (dicionário) para armazenar os valores já percorridos da lista junto com seus respectivos índices.
+
+            A ideia é simples: para cada número na lista, calculamos o complemento, que é alvo - número atual.
+            Em seguida, verificamos se esse complemento já foi armazenado no dicionário.
+
+            Se estiver, significa que já encontramos dois números cuja soma é igual ao alvo — basta retornar os índices:
+
+            o índice do complemento (já armazenado no dicionário)
+
+            o índice atual do número sendo analisado
+
+            Se não estiver, adicionamos o número atual ao dicionário com seu índice.
+
+            Essa abordagem permite encontrar a solução em tempo linear O(n), evitando comparações desnecessárias.
 """
 
 # Caso 1
