@@ -8,7 +8,7 @@ Aqui você encontrará minhas resoluções organizadas por dificuldade e categor
 ## 📂 Estrutura do Repositório
 
 ```
-📁 desafios-leetcode/
+📁 LeetCodeChallenges/
 ├── easy/
 │   └── List of easy solutions
 ├── medium/
