@@ -10,11 +10,11 @@ Aqui você encontrará minhas resoluções organizadas por dificuldade e categor
 ```
 📁 desafios-leetcode/
 ├── easy/
-│   └── two_sum.py
+│   └── List of easy solutions
 ├── medium/
-│   └── add_two_numbers.py
+│   └── List of medium solutions
 ├── hard/
-│   └── median_of_two_sorted_arrays.py
+│   └── List of hard solutions
 ├── README.md
 ```
 
