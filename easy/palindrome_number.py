@@ -1,8 +1,8 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         """
-            Se for negativo ou número modulo por 10 é igual a 0, 
-            pois todo número (exceto o 0) quando intertido o
+            Se for negativo ou modulo de x por 10 é igual a 0, 
+            pois todo número (exceto o 0) quando invertido o
             0 vai ficar a esquerda logo é desconsiderado e não será
             palindromo
         """
@@ -15,12 +15,12 @@ class Solution:
         halfPart = 0
 
         """
-            A idéia aqui é tirar o módulo e a parte inteira da divisão por 10,
+            A idéia aqui é tirar o módulo por 10 e a parte inteira da divisão por 10,
             e ir montando o valor de trás pra frente até que a metade da parte
             montada seja igual ao valor atual que está sendo retirado o último
-            dígito a cada iteração (em caso de total de dígitos pares) ou verificar
-            a metade com o valor anterior os calculos de remoção do último dígito
-            (em caso de total de dígitos ímpares).
+            dígito a cada iteração (no caso do total de dígitos pares) ou verificar
+            a parte montada com o valor anterior aos calculos de remoção do último dígito
+            (no caso do total de dígitos ímpares).
             Caso a metade montada seja maior que o valor atual indica que não é 
             um palíndromo.
         """
