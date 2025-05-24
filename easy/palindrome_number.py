@@ -17,10 +17,12 @@ class Solution:
         """
             A idéia aqui é tirar o módulo e a parte inteira da divisão por 10,
             e ir montando o valor de trás pra frente até que a metade da parte
-            montada seja igual ao valor inicial que está sendo retirado o último
+            montada seja igual ao valor atual que está sendo retirado o último
             dígito a cada iteração (em caso de total de dígitos pares) ou verificar
             a metade com o valor anterior os calculos de remoção do último dígito
             (em caso de total de dígitos ímpares).
+            Caso a metade montada seja maior que o valor atual indica que não é 
+            um palíndromo.
         """
         while True:
             beforeValue = currentValue
