@@ -8,6 +8,12 @@ class Solution:
         'D': 500,
         'M': 1000,
     }
+    """
+        A lógica de converter um número romano em inteiro é a seguinte:
+        leia as letras da direita para a esquerda, então faça:
+            Se o valor da letra atual for maior ou igual da ultima letra lida, some ao valor final
+            Caso contrário, subtraia o valor da letra pelo valor final
+    """
     def romanToInt(self, s: str) -> int:
         totalLetters = len(s)
         lastNumber = 0
